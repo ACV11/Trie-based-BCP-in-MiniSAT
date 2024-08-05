@@ -26,7 +26,7 @@ export LD LIBRARY PATH=$LD LIBRARY PATH/lib
 	- TRIE_V1 = Naive trie BCP
 	- TRIE_V2 = Persistent trie BCP
 	- TRIE_V3 = Persistent permuted trie BCP
-Eg: export VER=TRIE_v1
+Eg: export VER=TRIE_V1
 
 ================================================================================
 Directory Overview:
