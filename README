@@ -39,6 +39,30 @@ benchmarks		Contains the benchmark files
 output			Contains the testing results
 
 ================================================================================
+Changelist:
+
+• minisat/core/Solver.h:
+	– Definition of prop_time, line 242.
+	– Declaration of the permutation function, line 304.
+	– Definition of the Node class and Trie class, lines 307 to 331.
+• minisat/core/Solver.cc:
+	– Constructor definition for the Node class, lines 495 to 505.
+	– Constructor and implementation of Trie functions, lines 507 - 549.
+	– Permutation function definition, lines 551 to 580.
+	– Persistent trie object, line 583.
+	– In the propagate function:
+		∗ Lines 602 - 613: Logging functionality, measuring execution time,
+		  and configuration management.
+		∗ Lines 657 - 712: TRIE V1 BCP with logging logic.
+		∗ Lines 715 - 769: TRIE V2 BCP with logging logic.
+		∗ Lines 771 - 834: TRIE V3 BCP with logging logic.
+		∗ Lines 854 - 858: Logging functionality and measuring execution
+		  time.
+	– Printing execution time, line 1298.
+• minisat/utils/System.cc:
+	– Printing configuration version, lines 106 - 111.
+
+================================================================================
 Example:
 
 $ export VER=TRIE_V1
