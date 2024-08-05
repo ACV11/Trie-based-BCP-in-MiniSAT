@@ -1,0 +1,10 @@
+FPU set for double precision
+
+Propagation version: TRIE_V1
+
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:          1331                                         |
+|  Number of clauses:           28676                                         |
+|  Parse time:                   0.01 s                                       |
+|  Simplification time:          0.01 s             

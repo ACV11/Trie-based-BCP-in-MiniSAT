@@ -1,0 +1,35 @@
+FPU set for double precision
+
+Propagation version not set, defaulting to original linear implementation
+
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:          1728                                         |
+|  Number of clauses:           42969                                         |
+|  Parse time:                   0.01 s                                       |
+|  Simplification time:          0.01 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+|       100 |    1136    33647    86250 |    12337      100     25 | 34.259 % |
+|       250 |    1136    33647    86250 |    13570      250     22 | 34.260 % |
+|       475 |    1136    33647    86250 |    14928      475     20 | 34.264 % |
+|       812 |    1136    33647    86250 |    16420      812     21 | 34.260 % |
+|      1318 |    1135    33592    86119 |    18062     1316     21 | 34.317 % |
+|      2077 |    1133    33531    85965 |    19869     2073     20 | 34.433 % |
+|      3216 |    1133    33470    85812 |    21856     3212     19 | 34.433 % |
+|      4924 |    1133    33470    85812 |    24041     4920     19 | 34.433 % |
+|      7486 |    1132    33417    85680 |    26445     6485     19 | 34.492 % |
+===============================================================================
+restarts              : 46
+conflicts             : 11165          (30947 /sec)
+decisions             : 13218          (0.00 % random) (36638 /sec)
+propagations          : 2708428        (7507250 /sec)
+conflict literals     : 195541         (47.65 % deleted)
+Memory used           : 13.38 MB
+CPU time              : 0.360775 s
+Propagation time      : 0.291100 s
+
+UNSATISFIABLE

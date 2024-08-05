@@ -1,0 +1,71 @@
+================================================================================
+Building
+
+> Set the path of the folder containing the source code using an environment
+variable.
+export PREFIX=<path_to_source_code>
+
+> Navigate to the source code folder using the cd command.
+
+> Execute the command ‘make install prefix=$PREFIX’. 
+
+================================================================================
+Running application:
+
+> Set the library path to locate shared libraries using the LD_LIBRARY_PATH variable.
+LD LIBRARY PATH = <path>/minisat-master/build/dynamic
+export LD LIBRARY PATH=$LD LIBRARY PATH/lib
+
+> Change directory to the bin folder using the cd command
+
+> Execute the MiniSAT solver using the syntax:
+./minisat ⟨path to input CNF file⟩ ⟨path to output file⟩.
+
+> To change the BCP version, use "VER"
+	- LINEAR (default) = Original BCP
+	- TRIE_V1 = Naive trie BCP
+	- TRIE_V2 = Persistent trie BCP
+	- TRIE_V3 = Persistent permuted trie BCP
+Eg: export VER=TRIE_v1
+
+================================================================================
+Directory Overview:
+
+minisat/core/           Contains the core files used by the solver
+bin/           		Contains the executable and debug file
+benchmarks		Contains the benchmark files
+output			Contains the testing results
+
+================================================================================
+Example:
+
+$ export VER=TRIE_V1
+
+$ ./minisat ../benchmarks/QG/qg1-07.cnf ../output.txt
+FPU set for double precision
+
+Propagation version: TRIE_V1
+
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:           343                                         |
+|  Number of clauses:            9486                                         |
+|  Parse time:                   0.01 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+|       100 |     168     3750    12968 |     1375      100      8 | 51.021 % |
+===============================================================================
+restarts              : 2
+conflicts             : 105            (800 /sec)
+decisions             : 150            (0.00 % random) (1142 /sec)
+propagations          : 4313           (32845 /sec)
+conflict literals     : 867            (34.42 % deleted)
+Memory used           : 1523.27 MB
+CPU time              : 0.131314 s
+Propagation time      : 0.123683 s
+
+SATISFIABLE

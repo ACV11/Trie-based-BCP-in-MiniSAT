@@ -1,0 +1,26 @@
+FPU set for double precision
+
+Propagation version: TRIE_V1
+
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:           729                                         |
+|  Number of clauses:           10977                                         |
+|  Parse time:                   0.01 s                                       |
+|  Simplification time:          0.00 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+===============================================================================
+restarts              : 1
+conflicts             : 0              (0 /sec)
+decisions             : 17             (0.00 % random) (902 /sec)
+propagations          : 729            (38676 /sec)
+conflict literals     : 0              (-nan % deleted)
+Memory used           : 224.96 MB
+CPU time              : 0.018849 s
+Propagation time      : 0.015307 s
+
+SATISFIABLE
