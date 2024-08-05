@@ -62,6 +62,8 @@ Changelist:
 • minisat/utils/System.cc:
 	– Printing configuration version, lines 106 - 111.
 
+Additionally, the benchmarks and output folder are new too.
+
 ================================================================================
 Example:
 
