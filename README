@@ -28,6 +28,8 @@ export LD LIBRARY PATH=$LD LIBRARY PATH/lib
 	- TRIE_V3 = Persistent permuted trie BCP
 Eg: export VER=TRIE_V1
 
+> Enable logging by setting the verbosity level to 2 using -verb. The debug file is created in /bin.
+
 ================================================================================
 Directory Overview:
 
